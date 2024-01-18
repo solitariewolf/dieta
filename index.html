@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dieta Saudável</title>
+</head>
+<body>
+
+    <section class="section1">
+        <div class="secao1">
+            <div class="section1-left">
+                <h1 style="color: aquamarine; font-size: 35px; font-weight: bold;">DIETA</h1>
+                <h1 style="font-size: 35px; margin-bottom: 5px;">CERTA</h1>
+                <h2>DESCUBRA COMO DERRETER GORDURA UTILIZANDO RECEBEITAS MILENARES...</h2>
+                <p>Utilize as receitas secretas usadas por milhasres de mulheres para PERDER MUITO PESO em POUCO TEMPO...</p>
+                <video src="img/videointro.mp4"></video>
+                <a href="#" class="botao-comprar-1">QUERO COMEÇAR MINHA DIETA FITNESS AGORA</a>
+            </div><!--section1-left-->
+
+            <div class="mulher-fit">
+                <img src="img/mulherfit.png" alt="">
+            </div>
+
+        </div>
+
+        </div><!--secao1-->
+    </section><!--section1-->
+
+        <div class="degrade">
+            <div class="degrade-icones">
+                <ul>
+                    <img src="img/relogio.png" alt="">
+                    <li>RESULTADOS RÁPIDOS</li>
+                    <img src="img/dieta.png" alt="">
+                    <li>DIETA SAUDÁVEL E EFICAZ</li>
+                    <img src="img/cardapio.png" alt="">
+                    <li>CARDÁPIO COMPLETO</li>
+                </ul>
+            </div><!--degrade-icones-->
+        </div>
+
+    <section class="section2">
+        <div class="secao2">
+            <img src="img/mulherfit2.jpg" alt="">
+            <div class="secao2-escritas">
+                <h2>EMAGREÇA SEM PASSAR FOME</h2>
+                <p>Bem-vindo ao lugar onde a jornada para um novo "você" começa! No nosso programa de emagrecimento personalizado, não apenas ajudamos a perder peso, mas também a transformar sua vida. Diga adeus às dietas restritivas e olá para um estilo de vida saudável e sustentável. Com um foco holístico, nosso programa não se trata apenas da balança. Trabalhamos para fortalecer sua mente e corpo, proporcionando mudanças reais e duradouras. Imagine-se com mais energia, confiança e vitalidade. Estamos aqui para ajudar a tornar isso realidade.</p>
+                <a href="#" class="botao-comprar-1">QUERO COMEÇAR MINHA DIETA FITNESS AGORA</a>
+            </div>
+        </div>
+    </section><!--section2-->
+
+
+
+
+    <section class="section2">
+        <div class="secao3">
+            <div class="secao3-escritas">
+                <h1 style="color: aquamarine; font-size: 35px; font-weight: bold;">DIETA</h1>
+                <h1 style="font-size: 35px; margin-bottom: 5px;">CERTA</h1>
+                <h2>PERCA PESO URGENTE</h2>
+                <div class="container">
+
+                        <div class="minicontainer">
+                            <div class="redondo">
+                                <img src="img/cardiaco.png" alt="">
+                            </div>
+                            <div class="retangulo">
+                                <h1>PROBLEMAS CARDIACOS</h1>
+                            </div>
+                            <p>Reduzindo a ingestão de gorduras saturadas e sódio, você ajuda a manter níveis saudáveis de pressão arterial e colesterol, promovendo um coração forte e resistente.</p>
+                        </div>
+
+                        <div class="minicontainer">
+                            <div class="redondo">
+                                <img src="img/ansiedade.png" alt="">
+                            </div>
+                            <div class="retangulo">
+                                <h1>PROBLEMAS COM ANSIEDADE</h1>
+                            </div>
+                            <p>Nutrientes auxiliam na regulação dos neurotransmissores cerebrais, proporcionando estabilidade emocional, você não apenas nutre seu corpo, mas também apoia a saúde mental.</p>
+                        </div>
+
+                        <div class="minicontainer">
+                            <div class="redondo">
+                                <img src="img/diabete.png" alt="">
+                            </div>      
+                            <div class="retangulo">
+                                <h1>PROBLEMAS COM DIABETES</h1>
+                            </div>
+                            <p>Uma dieta focada em carboidratos complexos, fibras e proteínas magras pode ajudar a estabilizar os níveis de açúcar no sangue. </p>
+                        </div>
+
+                </div><!--container-->
+            </div><!--section3-escritas-->
+        </div><!--secao3-->
+
+    </section><!--section2-->
+
+    <section class="section2">
+        <div class="container-compras">
+            <img src="img/salada.png" alt="">
+
+            <div class="container-preco">
+                <h3>OFERTA ESPECIAL</h3>
+                <h4>Você ganhou um bonus por tempo limitado, super descontaço de R$ 400,00</h4>
+                <div id="contador"></div>
+                <h1>De R$ 499,90 por apenas</h1>
+                <h2>R$ 99,90</h2>
+                <a href="#" class="btn-comprar-final">COMPRAR AGORA</a>
+                    <div class="icons-comprar">
+                        <img src="img/seguro.png" alt="">
+                        <p>Compra <b>Segura</b></p>
+                        <img src="img/qualidade.png" alt="">
+                        <p>Satisfação Garantida</p>
+                        <img src="img/trancar.png" alt="">
+                        <p>Privacidade Protegida</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+    <script>
+    let minutos = 5;
+    let segundos = 0;
+    
+    // Atualiza o contador a cada segundo
+    function atualizarContador() {
+        const contadorElemento = document.getElementById("contador");
+    
+        if (minutos >= 0) {
+            contadorElemento.textContent = `${minutos}m ${segundos}s`;
+            segundos--;
+    
+            if (segundos < 0) {
+                segundos = 59;
+                minutos--;
+            }
+    
+            setTimeout(atualizarContador, 1000);
+        } else {
+            contadorElemento.textContent = "Tempo esgotado!";
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        atualizarContador();
+    });
+    </script>
+</html>
